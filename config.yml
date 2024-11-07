@@ -1,0 +1,69 @@
+baseURL: "https://azibom.com/"
+title: "Azibom"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+  env: "production"  # Enables features like OpenGraph, Twitter Cards, and Schema.
+  title: "Azibom"
+  description: "Welcome to my personal blog, where I dive deep into the world of software engineering and system design. With a passion for building robust and scalable systems, I share insights from my professional journey, the challenges I've faced, and the solutions I've crafted. Here, you'll also find updates on my open-source contributions, as I work to give back to the developer community and grow as an active contributor. Whether you're a seasoned engineer or just getting started, join me as we explore the evolving landscape of technology together!"
+  keywords: ["Software Engineering", "System Design", "Open Source Contribution", "Scalable Systems", "Software Architecture"]
+  author: "MohammadReza (Azibom) Shabani"
+  images: ["https://avatars.githubusercontent.com/u/34370960?v=4"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: "auto"  # Automatically adjusts based on the user's system settings.
+  disableThemeToggle: false  # Allows visitors to switch between light and dark modes.
+
+  ShowReadingTime: true
+  ShowWordCount: true
+  comments: true  # Enables comments on posts.
+  disqusShortname: "your-disqus-shortname"  # Replace with your Disqus shortname.
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my personal blog, where I dive deep into the world of software engineering and system design. With a passion for building robust and scalable systems, I share insights from my professional journey, the challenges I've faced, and the solutions I've crafted. Here, you'll also find updates on my open-source contributions, as I work to give back to the developer community and grow as an active contributor. Whether you're a seasoned engineer or just getting started, join me as we explore the evolving landscape of technology together!
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/azibom"
+    - name: "twitter"
+      url: "https://twitter.com/theAzibom"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/azibom/"
+    - name: "stackoverflow"
+      url: "https://stackoverflow.com/users/13060981/azibom"
+    - name: "globe"
+      url: "https://azibom.com"
+
+
+menu:
+  main:
+    - identifier: "archive"
+      name: "Archive"
+      url: "/posts/"
+      weight: 10
+    - identifier: "search"
+      name: "Search"
+      url: "/search/"
+      weight: 20
+    - identifier: "tags"
+      name: "Tags"
+      url: "/tags/"
+      weight: 30
+    - identifier: "github"
+      name: "GitHub"
+      url: "https://github.com/azibom"
+      weight: 40
+      params:
+        external: true
+
+markup:
+  highlight:
+    noClasses: false
+    style: "monokai"
+
